@@ -1,0 +1,10 @@
+DateTime        Date    "Date [%1$tA, %1$td.%1$tm.%1$tY]"       (Status)        { ntp="Europe/Moscow:ru_RU" }
+
+String Temperature "Temperature [%s]" { mqtt="<[mosquitto:home/temperature:state:default]"}
+String Humidity "Humidity [%s]" { mqtt="<[mosquitto:home/humidity:state:default]" }
+
+
+String Move "Move [%s]"{mqtt="<[mosquitto:home/move:state:default]"}
+Switch Test {mqtt=">[mosquitto:home/move:command:ON:1],>[mosquitto:home/move:command:OFF:0]"}
+String isMove {mqtt=">[mosquitto:home/move:state:default]"}
+

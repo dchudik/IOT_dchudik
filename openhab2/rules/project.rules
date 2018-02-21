@@ -1,0 +1,15 @@
+rule "Switch"
+	when
+		Item isMove received update
+	then
+	if(isMove.state == 1) Move.postUpdate(0)
+	else Move.postUpdate(1)	
+end
+
+rule "Temperature"
+	when
+		Item Temperature received update
+	then
+	Temperature.postUpdate(Temperature)
+end
+
