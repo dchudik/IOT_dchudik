@@ -1,0 +1,9 @@
+DateTime	Date	"Date [%1$tA, %1$td.%1$tm.%1$tY]"	(Status)	{ ntp="Europe/Moscow:ru_RU" }
+
+Number Temperature "Temperature [%.2f F]" { mqtt="<[mosquitto:home/temperature:state:default]"}
+
+Switch Move {mqtt="<[mosquitto:home/move:state:ON:ON], <[mosquitto:home/move:state:OFF:OFF]"}
+Switch Test {mqtt=">[mosquitto:home/move:command:ON:1],>[mosquitto:home/move:command:OFF:]"}
+
+
+ 

@@ -1,0 +1,15 @@
+sitemap demo label="My home automation" {
+    Frame label="Date" {
+        Text item=Date icon="calendar"
+    }
+    Frame label="Info"{
+	Text item=Temperature icon="temperature"
+	Text item=Humidity icon="rain"
+    }
+    Frame label="Move"{
+	Switch item=Move 
+	Switch item=Test
+	}
+        
+}
+
