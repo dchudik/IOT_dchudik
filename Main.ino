@@ -2,7 +2,7 @@
 #include <PubSubClient.h>
 
 const char *ssid = "Keenetic-1932"; // Имя роутера
-const char *pass = "YwnBj6o6"; // Пароль роутера
+const char *pass = "WiFiPass"; // Пароль роутера
 
 const char *mqtt_server = "192.168.1.9"; // Имя сервера MQTT
 const int mqtt_port = 14483; // Порт для подключения к серверу MQTT
